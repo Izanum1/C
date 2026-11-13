@@ -1,0 +1,19 @@
+ // Crie um programa que simula um sistema de login simples. Ele usa o while para continuar pedindo a senha repetidamente até que o usuário digite a senha correta ("1234")
+ // É excelente para situações onde o número de repetições é imprevisível.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    int senha = 0;
+    
+    while(senha != 6969){
+        printf("Digite sua senha: ");
+        scanf("%d", &senha);
+    
+    if (senha != 6969){
+        printf("Senha incorreta, realize uma nova tentativa.\n");
+    }
+}
+    printf("Acesso Liberado!\nBem Vindo!");
+    return 0;
+}

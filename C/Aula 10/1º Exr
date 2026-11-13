@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// 1. Apenas avisa o compilador que a funcao existe
+
+void vs(int senha);
+
+int main(){
+    // 2. Executa a funcao passando i numero 1234
+    vs(1234);
+    return 0;
+}
+
+//3. O codigo que faz o trabalho real
+

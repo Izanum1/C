@@ -1,0 +1,29 @@
+/* 
+Você deve fazer um programa que apresente a sequencia conforme o exemplo abaixo.
+
+Entrada
+Não há nenhuma entrada neste problema.
+
+Saída
+Imprima a sequencia conforme exemplo abaixo
+*/
+
+#include <stdio.h>
+
+int main(){
+    
+    int i = 1;
+    int j = 7;
+    
+    while(i <= 9){
+        printf("I=%d J=%d\n", i, j);
+        j--;
+        if(j == 4){
+            j = 7;
+            i += 2;
+        }
+    }
+    
+    return 0;
+}
+

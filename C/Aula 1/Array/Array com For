@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    double x[5], soma;
+    int contagem;
+    soma = 0;
+    for (contagem = 0; contagem < 5; contagem ++){
+        printf("\nDigite o %d, o numero: ", contagem + 1);
+        scanf("%lf", &x[contagem]);
+        soma = soma + x[contagem];
+    }
+    for (contagem = 0; contagem < 5; contagem++){
+        printf("\nValores digitados são: %lf", x[contagem]);
+    } 
+    printf("\n O resultado da soma é: %lf", soma);
+    return 0;
+}

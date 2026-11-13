@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    double x[5], soma;
+    int contagem;
+    
+    //inicializando o valor de soma
+    soma = 0;
+    
+    // iniciando o contador
+    contagem = 0;
+    
+    while (contagem < 5){
+        printf("\nDigite o %d, o numero: ", contagem + 1);
+        scanf("%lf", &x[contagem]);
+        soma = soma + x[contagem];
+        contagem++;
+    }
+    contagem = 0;
+    printf("\nValores digitados são:");
+    while (contagem < 5){
+        printf("%lf; ", x[contagem]);
+        contagem++;
+    }
+    printf("\n O resultado da soma é: %d", soma);
+    return 0;
+}

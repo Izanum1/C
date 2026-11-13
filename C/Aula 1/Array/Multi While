@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    double x[10], multi;
+    int contagem;
+    multi = 1.0;
+    contagem = 0;
+    while(contagem < 10){
+        printf("Digite %d o número : ", contagem + 1);
+        scanf("%lf", &x[contagem]);
+        multi = multi * x[contagem];
+        contagem++;
+    }
+    contagem = 0;
+     printf("\nOs valores digitados são: %.2lf", x[contagem]);
+    while (contagem < 10){
+        printf("%lf", x[contagem]);
+        contagem++;
+    }
+    printf("\nO resultado da multiplicação é: %.2lf", multi);
+    return 0;
+}

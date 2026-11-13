@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    int num1 = 1, num2 = 2, num3 = 3, num4 = 4, num5 = 5, soma;
+    
+    printf("%d %d %d %d %d\n", num1,num2,num3,num4,num5);
+    soma = num1+num2+num3+num4+num5;
+    printf("A soma dos valores é :%d",soma);
+    return 0;
+}

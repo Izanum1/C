@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    double x[10], multi;
+    int contagem;
+    multi = 1.0;
+    for(contagem = 0; contagem < 10; contagem++){
+        printf("Digite o %d, o número : ", contagem + 1);
+        scanf("%lf", &x[contagem]);
+        multi = multi * x[contagem];
+    }
+    for (contagem = 0; contagem < 10; contagem ++){
+        printf("Os valores %d digitados são: %lf\n", x[contagem]);
+    }
+    printf("O resultado da multiplicação é: %lf", multi);
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    //Exemplo: Imprimir números de 1 a 10 e dizer se são pares ou ímpares
+    // for(inicialização; condição; incremento)
+    for (int x = 1; x <= 10; x++){ //1. Inicializa x=1, repete até x=10
+        if(x % 2 == 0){               //2. Condição: x é divisível por 2?
+            printf("%d é par\n",x);  //3. Se sim, executa este bloco
+    }   else{ 
+            printf("%d e impar\n",x);//4. Se não, execura este bloco
+    }
+}
+    return 0;
+}

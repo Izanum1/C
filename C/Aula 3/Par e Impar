@@ -1,0 +1,19 @@
+// Crie um programa que peça um número inteiro ao usuário e informe se o número digitado e PAR ou IMPAR.
+// (Dica: um número é par quando o resto da divisão dele por 2 é igual a zero, representado em C 
+// por numero % 2 == 0)
+
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    int num;
+    
+    printf("Digite um valor: ");
+    scanf("%d", &num);
+    
+    if (num % 2 == 0){
+        printf("O numero digitado %d, se trata de um número Par!", num);
+    } else
+        printf("O numero digitado %d, se trata de um número Impar!", num);
+    
+    return 0;
+}

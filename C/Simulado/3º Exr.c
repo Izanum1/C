@@ -1,0 +1,23 @@
+// Neste problema, deve-se ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1
+// código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. 
+// Após, calcule e mostre o valor a ser pago.
+
+#include <stdio.h>
+
+int main(){
+    
+    int cod1, cod2, qnt1, qnt2;
+    float vlr1, vlr2, s1, s2, r1;
+    
+    scanf("%d %d %f", &cod1, &qnt1, &vlr1);
+    scanf("%d %d %f", &cod2, &qnt2, &vlr2);
+    
+    s1 = vlr1 * qnt1;
+    s2 = vlr2 * qnt2;
+    
+    r1 = s1 + s2;
+    printf("VALOR A PAGAR: R$ %.2f\n", r1);
+    
+    
+    return 0;
+}

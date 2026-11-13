@@ -1,0 +1,23 @@
+// Mostra o uso de variÃ¡veis decimais (float) 
+//e operadores de divisÃ£o (/) 
+//e multiplicaÃ§Ã£o (*) 
+//para converter graus Fahrenheit para Celsius.
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    float f, c;
+    
+    printf("--- Conversor de Temperatura ---\n");
+    printf("Informe a temperatura em Fahrenheit: ");
+    scanf("%f", &f);
+    
+    c = 5.0 / 9.0 * (f - 32.0);
+    
+    printf("A temperatura em Fahrenheit Ã© %.2fÂº, em Celsius Ã© %.2fÂº.", f, c);
+    getchar();
+    getchar();
+    
+    return 0;
+} 

@@ -1,0 +1,26 @@
+// Este programa demonstra como declarar variáveis, usar o operador de soma (\(+\)) e ler um caractere no final para impedir que a tela feche sozinha
+
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    int num1, num2, soma;
+    
+    printf("Digite o 1º valor:\n ");
+    scanf("%d", &num1);
+    
+    printf("Digite o 2º valor:\n ");
+    scanf("%d", &num2);
+    
+    soma = num1 + num2;
+    
+    printf("A soma de %d + %d trará o resultado = %d.\n", num1, num2, soma);
+    
+    printf("Pressione qualquer tecla para sair...");
+    getchar(); // Consome o caractere de nova linha deixado pelo scanf
+    getchar(); // Aguarda o usuário pressionar qualquer tecla. 
+    
+    // Início → Declara variáveis → Lê num1 → Lê num2
+    // Calcula soma → Exibe resultado → Aguarda tecla → Fim
+    
+    return 0;
+}

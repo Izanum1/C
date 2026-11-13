@@ -1,0 +1,20 @@
+// Escreva um programa que leia três notas de um aluno e calcule a média aritmética simples delas.
+// O programa deve avaliar o resultado final com base nas seguintes regras:
+// Média maior ou igual a 7.0: Exibir "Aprovado". Média entre 5.0 (inclusive) e 6.9: Exibir " Recuperação".
+// Média abaixo de 5.0: Exibir " Reprovado".
+
+// Lógica: Utilizar a estrutura encadeada else if para testar múltiplas faixas de valor consecutivamente.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    float a,b,c,media;
+    scanf("%f %f %f", &a, &b, &c);
+    media = ((a + b + c) / 3);
+    if(media >= 7){
+        printf("Aprovado");
+    }else if (media >= 5){
+        printf("Recuperação");
+    }else printf("Reprovado");
+    return 0;
+}

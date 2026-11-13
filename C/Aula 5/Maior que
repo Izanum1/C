@@ -1,0 +1,16 @@
+//Maior de Dois Números:
+//Faça um programa que leia dois números e mostre qual deles é o maior.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int a, b;
+    scanf("%d %d", &a, &b);
+    
+    if( a > b){
+        printf("Seu A é maior.");
+    }else if (b > a){
+        printf("Seu B é maior.");
+    }else printf("Os valores são iguais");
+    return 0;
+}

@@ -1,0 +1,31 @@
+// Menu com Switch-CaseÃª(IntermediÃ¡rio)
+//Crie um programa que exiba um menu com 3 opÃ§Ãµes de frutas
+//(1- MaÃ§a, 2-Banana, 3-Abacaxi) e mostre o nome da fruta.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int opcao;
+    
+    printf("---- Menu de Frutas ----\n");
+    printf("1 - Maça\n");
+    printf("2 - Banana\n");
+    printf("3 - Abacaxi\n");
+    printf("Escolha uma opção\n");
+    scanf("%d", &opcao);
+    
+    switch(opcao){
+        case 1:
+             printf("Você escolheu Maça\n");
+             break;
+        case 2:
+              printf("Vocẽ escolheu Banana\n");
+             break;
+        case 3:
+             printf("Você escolheu Abacaxi\n");
+             break;
+        default:
+             printf("Opção invalida!\n");
+    }
+    return 0;
+}

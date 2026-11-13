@@ -1,0 +1,21 @@
+// Crie um programa que solicite a idade de uma pessoa e verifique se ela é maior de idade.
+// Se a idade for maior ou igual a 18, o programa deve exibir "Acesso permitido".
+// Caso contrário, deve exibir "Acesso negado".
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    int i;
+    printf("Digite sua idade: ");
+    scanf("%d", &i);
+    
+    if(i >= 18 && i <= 74){
+        printf("Você é maior de idade. Acesso liberado!");
+    } else if (i >= 75){
+        printf("Você está muito velho. /n Aposenta!");
+    }else {
+        printf("Você não é maior de idade. Acesso negado");
+    }
+    return 0;
+}

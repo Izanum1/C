@@ -1,0 +1,18 @@
+// Escreva um programa que peÃ§a para o usuÃ¡rio digitar a mÃ©dia final de um aluno (um nÃºmero decimal/float).
+// Se a mÃ©dia for maior ou igual a 7.0, exiba: "Aprovado".
+// Se a mÃ©dia for menor que 7.0 e maior ou igual a 5.0, exiba: " RecuperaÃ§Ã£o".
+// Se a mÃ©dia menor que 5.0, exiba: " Reprovado".
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    float media;
+    scanf("%f", &media);
+    
+    if(media >= 7){
+        printf("Aprovado\n");
+    }else if(media < 7 && media >= 5){
+        printf("RecuperaÃ§Ã£o\n");
+    }else printf("Reprovado\n");
+    return 0;
+}

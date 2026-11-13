@@ -1,0 +1,15 @@
+//Escreva um programa que peça para o usuário digitar a sua idade.
+//Se a idade for igual ou superior a 18 anos, exiba a mensagem 
+//"Acesso liberado (Maior de Idade)".
+//Caso contrário, exiba "Acesso negado (Menor de Idade)".
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int idade;
+    scanf("%d", &idade);
+    if(idade >= 18){
+        printf("Acesso liberado (Maior de Idade)");
+    }else printf("Acesso negado (Menor de Idade)");
+    return 0;
+}

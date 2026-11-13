@@ -1,0 +1,51 @@
+#include <stdio.h>
+// funcao 1 (sem retorno ou argumento ): menu_de _opcoes
+//   - opcao 1: soma, subtracao, multiplicacao, divisao e sair.
+// funcao 2 (sem argumentos com retorno): ler_opcao
+//  - le uma opcao valida e retorna.
+
+
+
+
+void menu(){
+    printf("Selecione uma opcao: \n");
+    printf("\tSoma: + \n");
+    printf("\tSubtracao: -\n");
+    printf("\t Multiplicacao:  *\n");
+    printf("\tDivisao: /\n");
+    printf("\tSair: s\n\n");
+}
+
+char ler_opcao(){
+    char op;
+    int v = 0;
+    while(v == 0){
+          scanf(" %c", &op);
+    switch(op){
+        case'+':
+        case'-':
+        case'*':
+        case'/':
+        case's':
+             return op;
+        default:
+            printf("Opcao invalida!\n\n");
+            menu();
+    }
+  }
+}
+
+int main(){
+    
+    char op;
+    
+    menu();
+    
+   op =  ler_opcao();
+
+// implementacao aqui
+
+    printf("A opcao escolhida foi %c: ", op);
+    
+    return 0;
+}
